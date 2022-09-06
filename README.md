@@ -3,7 +3,7 @@
 C++ project that automatically recognises and whitens parts of a digital image taken of a text document which do not contain any useful information.  
 In addition it also improves readability by minimising the difference in lighting conditions across the image (brightening shadows).  
 This is meant to be more of a resource than a ready to use program. The example main.cpp is by all means just an example; although it does work, it is very simple and it lacks error handling.  
-Main use case is when you take a picture of a text only document with your phone (possibly by using Microsoft Lens or something similar) and the otherwise uniformly white paper is far from pure white and/or there are different colours of white appearing in the image (shadows, reflections and similar effects can cause this easily). This algorithm aims to make compression more efficient (by creating a large continous uniformly white area) and make images more readable.
+Main use case is when you take a picture of a text only document with your phone (possibly by using Microsoft Lens or something similar) and the otherwise uniformly white paper is far from pure white and/or there are different colours of white appearing in the image (shadows, reflections and similar effects can cause this easily). This algorithm aims to make compression more efficient (by creating a large continuous uniformly white area) and make images more readable.
 
 ## Prerequisites (dependencies)
 In order to compile and use the program you need the following libraries:
@@ -35,3 +35,9 @@ by default the program outputs only a greyscale image, howewer if you want a col
 You can find out more about the possible options by running `dbrt --help`.  
 The first argument should alway be the path to the input image file, and the last argument is path to the greyscale output file.  
 Supported file formats are defined by DevIL and you can read a full list of them in the Developer's Image Library Manual under the section "Appendix B: Supported File Formats" (http://openil.sourceforge.net/docs/DevIL%20Manual.pdf)
+  
+## Example images
+![Cicero_cmpr](https://user-images.githubusercontent.com/112719780/188661943-bf745ece-6b05-4ac9-8193-7c6b864d2e05.jpg)  
+Source (original image): https://commons.wikimedia.org/wiki/File:Text_stanov_Matice_slovenskej_z_roku_1862.jpg  
+![Matice_cmpr](https://user-images.githubusercontent.com/112719780/188661953-ad6da078-3c2b-4981-912b-e8639dacd3b9.jpg)  
+Source (original image): https://commons.wikimedia.org/wiki/File:Page_of_text_emphasizing_the_ancient_pseudo-science_Wellcome_L0034241.jpg  
